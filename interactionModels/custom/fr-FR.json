@@ -1,0 +1,155 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "météo marine",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": ["annuler", "stop", "arrêter"]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": ["aide", "help", "comment ça marche"]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": ["stop", "arrête", "au revoir", "quitter"]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "MeteoMarineIntent",
+          "slots": [
+            {
+              "name": "location",
+              "type": "LOCATION_TYPE"
+            }
+          ],
+          "samples": [
+            "météo marine",
+            "météo en mer",
+            "conditions en mer",
+            "météo à {location}",
+            "météo marine à {location}",
+            "conditions marines à {location}",
+            "quel temps fait-il en mer à {location}",
+            "la météo marine de {location}",
+            "bulletin météo marine pour {location}",
+            "état de la mer à {location}",
+            "conditions météo à {location}",
+            "donne moi la météo de {location}",
+            "donne moi la météo marine de {location}",
+            "quelle est la météo à {location}"
+          ]
+        },
+        {
+          "name": "MareeIntent",
+          "slots": [
+            {
+              "name": "location",
+              "type": "LOCATION_TYPE"
+            }
+          ],
+          "samples": [
+            "marées",
+            "les marées",
+            "horaires des marées",
+            "marées à {location}",
+            "horaires des marées à {location}",
+            "les marées à {location}",
+            "quand est la prochaine marée à {location}",
+            "prochain coefficient à {location}",
+            "coefficient de marée à {location}",
+            "à quelle heure est la marée à {location}",
+            "pleine mer à {location}",
+            "basse mer à {location}",
+            "les marées de {location}",
+            "horaires des marées pour {location}"
+          ]
+        },
+        {
+          "name": "MeteoEtMareeIntent",
+          "slots": [
+            {
+              "name": "location",
+              "type": "LOCATION_TYPE"
+            }
+          ],
+          "samples": [
+            "tout sur {location}",
+            "météo et marées à {location}",
+            "bulletin complet pour {location}",
+            "météo marine et marées à {location}",
+            "donne moi tout pour {location}",
+            "bulletin complet à {location}",
+            "conditions complètes à {location}",
+            "rapport complet pour {location}"
+          ]
+        },
+        {
+          "name": "MaPositionIntent",
+          "slots": [],
+          "samples": [
+            "ma position",
+            "ici",
+            "où je suis",
+            "météo ici",
+            "météo à ma position",
+            "marées ici",
+            "utilise ma position",
+            "détecte ma position",
+            "trouve ma position"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "LOCATION_TYPE",
+          "values": [
+            {"name": {"value": "Biarritz"}},
+            {"name": {"value": "Bayonne"}},
+            {"name": {"value": "Saint-Jean-de-Luz"}},
+            {"name": {"value": "La Rochelle"}},
+            {"name": {"value": "Royan"}},
+            {"name": {"value": "Bordeaux"}},
+            {"name": {"value": "Arcachon"}},
+            {"name": {"value": "Brest"}},
+            {"name": {"value": "Lorient"}},
+            {"name": {"value": "Vannes"}},
+            {"name": {"value": "Saint-Nazaire"}},
+            {"name": {"value": "Nantes"}},
+            {"name": {"value": "Saint-Malo"}},
+            {"name": {"value": "Cherbourg"}},
+            {"name": {"value": "Caen"}},
+            {"name": {"value": "Le Havre"}},
+            {"name": {"value": "Rouen"}},
+            {"name": {"value": "Calais"}},
+            {"name": {"value": "Dunkerque"}},
+            {"name": {"value": "Marseille"}},
+            {"name": {"value": "Toulon"}},
+            {"name": {"value": "Nice"}},
+            {"name": {"value": "Monaco"}},
+            {"name": {"value": "Ajaccio"}},
+            {"name": {"value": "Bastia"}},
+            {"name": {"value": "Sète"}},
+            {"name": {"value": "Montpellier"}},
+            {"name": {"value": "Perpignan"}}
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "MeteoMarineIntent",
+          "delegationStrategy": "ALWAYS",
+          "slots": []
+        }
+      ],
+      "delegationStrategy": "SKILL_RESPONSE"
+    },
+    "prompts": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "alexa-meteo-marine",
+  "version": "1.0.0",
+  "description": "Alexa Skill — Météo Marine et Marées pour les côtes françaises",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/local.js",
+    "deploy": "ask deploy",
+    "package": "cd lambda && zip -r ../skill.zip . --exclude '*.git*' --exclude 'node_modules/.cache/*'"
+  },
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.89.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Votre Nom",
+  "license": "MIT"
+}
