@@ -1,222 +1,163 @@
-# 🌊 Alexa Skill — Météo Marine & Marées
+# 🌊 Alexa Skill — Météo Marine & Marées (v3.0)
 
-Skill Alexa en français qui fournit :
-- **Météo marine** : vent (direction, force Beaufort, nœuds, rafales), état de la mer, visibilité, pression, température
-- **Marées** : horaires pleine/basse mer, coefficient, amplitude, phase actuelle (montante/descendante)
-- **Bulletin complet** : les deux en un seul appel
-- **Détection automatique** : utilise l'adresse de votre box Alexa si aucun lieu n'est précisé
+Skill Alexa entièrement **gratuite** : marées officielles SHOM sans clé API,
+météo marine via OpenWeatherMap (plan gratuit).
 
 ---
 
-## 📋 Prérequis
+## 💡 L'astuce SHOM — Vignette gratuite
 
-| Outil | Version | Lien |
-|-------|---------|------|
-| Node.js | ≥ 18 | https://nodejs.org |
-| ASK CLI | ≥ 2.x | `npm install -g ask-cli` |
-| AWS CLI | ≥ 2.x | https://aws.amazon.com/cli |
-| Compte Amazon Developer | — | https://developer.amazon.com |
-| Compte AWS | — | https://aws.amazon.com |
+Le SHOM expose un endpoint public destiné aux sites web pour afficher
+une petite iframe de marées. Il retourne du JavaScript parsable contenant
+les prochaines marées avec **coefficients officiels** — sans abonnement.
+
+```
+GET https://services.data.shom.fr/hdm/vignette/petite/{PORT}?locale=fr
+```
+
+**Ce qu'on obtient :**
+- Type : PM (Pleine Mer) ou BM (Basse Mer)
+- Heure en heure légale française (hiver/été géré nativement)
+- Hauteur en mètres (zéro hydrographique SHOM)
+- Coefficient officiel (Manche/Atlantique) ou `---` (Méditerranée)
+
+**Exemple — Royan :**
+```
+BM  05:30  2.35m  ---
+PM  12:20  4.12m  35
+BM  18:08  2.52m  ---
+```
 
 ---
 
 ## 🔑 Clés API nécessaires
 
-### 1. OpenWeatherMap (GRATUIT — plan Free)
-- Créez un compte sur https://openweathermap.org/api
-- Récupérez votre clé API dans votre profil
-- Activez : **Current Weather Data** + **Geocoding API** (inclus dans le plan gratuit)
-- Limite gratuite : 1000 appels/jour — largement suffisant pour une box Alexa
+### OpenWeatherMap (GRATUIT)
+- Compte sur https://openweathermap.org/api
+- Plan gratuit : 1 000 appels/jour
+- Variable d'env Lambda : `OPENWEATHER_API_KEY`
 
-### 2. WorldTides (GRATUIT — 100 requêtes/mois)
-- Créez un compte sur https://www.worldtides.info/developer
-- Récupérez votre clé API
-- 100 requêtes gratuites/mois (1 requête = 1 appel de marée)
-- Pour plus : plan payant à partir de 10$/an
-
-> **💡 Alternative française pour les marées** : L'API SHOM (Service Hydrographique et Océanographique de la Marine) est **100% gratuite** pour les ports français.
-> URL : `https://services.data.shom.fr`
-> Voir section "Alternative SHOM" en bas de ce fichier.
+### SHOM — Aucune clé !
+Le service de vignette est public et gratuit.
 
 ---
 
-## 🚀 Installation et déploiement
+## 🚀 Installation
 
-### Étape 1 — Configurer l'ASK CLI
-
+### 1. Prérequis
 ```bash
+npm install -g ask-cli
 ask configure
-# Suivez les instructions pour lier votre compte Amazon Developer et AWS
 ```
 
-### Étape 2 — Installer les dépendances
-
+### 2. Dépendances
 ```bash
-cd lambda
-npm install
-cd ..
+cd lambda && npm install && cd ..
 ```
 
-### Étape 3 — Créer la fonction Lambda AWS
-
+### 3. Créer la Lambda AWS
 ```bash
-# Créer la fonction sur AWS Lambda (région eu-west-1 = Europe Irlande, recommandée pour les skills FR)
+# Packager
+cd lambda && zip -r ../skill.zip . && cd ..
+
+# Créer la fonction (région EU recommandée pour les skills FR)
 aws lambda create-function \
   --function-name meteo-marine-skill \
   --runtime nodejs18.x \
-  --role arn:aws:iam::VOTRE_ACCOUNT_ID:role/lambda-alexa-role \
+  --role arn:aws:iam::VOTRE_ID:role/lambda-alexa-role \
   --handler index.handler \
+  --timeout 10 \
   --region eu-west-1 \
   --zip-file fileb://skill.zip
 
-# Ajouter les variables d'environnement (clés API)
+# Variable d'environnement
 aws lambda update-function-configuration \
   --function-name meteo-marine-skill \
-  --environment "Variables={OPENWEATHER_API_KEY=VOTRE_CLE_OWM,WORLDTIDES_API_KEY=VOTRE_CLE_WORLDTIDES}" \
+  --environment "Variables={OPENWEATHER_API_KEY=VOTRE_CLE_OWM}" \
   --region eu-west-1
 ```
 
-### Étape 4 — Créer le rôle IAM Lambda
+### 4. Mettre à jour skill.json
+Remplacez `VOTRE_ACCOUNT_ID` par votre vrai ID de compte AWS.
 
-Dans la console AWS IAM, créez un rôle avec la politique `AWSLambdaBasicExecutionRole`.
-
-### Étape 5 — Mettre à jour skill.json
-
-Remplacez `VOTRE_ACCOUNT_ID` dans `skill.json` par votre vrai ID de compte AWS.
-
-```json
-"uri": "arn:aws:lambda:eu-west-1:123456789012:function:meteo-marine-skill"
-```
-
-### Étape 6 — Déployer via ASK CLI
-
+### 5. Déployer la skill
 ```bash
 ask deploy
 ```
 
-Cette commande déploie :
-- Le modèle d'interaction (intents, slots)
-- Les métadonnées de la skill
-- Lie la Lambda existante
-
-### Étape 7 — Tester la skill
-
-```bash
-# Test en ligne de commande
-ask dialog --locale fr-FR
-
-# Ou dans la console Alexa Developer
-# https://developer.amazon.com → Test → Activez "Mode de test"
-```
+### 6. Autoriser l'adresse de la box
+App Alexa → Appareils → Echo → Adresse → Renseignez-la.
+Puis : Compétences → Météo Marine → Autorisations → Adresse complète.
 
 ---
 
-## 🎤 Exemples d'utilisation
+## 🎤 Exemples de commandes
 
 ```
 "Alexa, ouvre Météo Marine"
-→ Bulletin automatique basé sur l'adresse de la box
-
-"Alexa, demande à Météo Marine la météo à Biarritz"
-→ Conditions marines à Biarritz
-
-"Alexa, demande à Météo Marine les marées à La Rochelle"
-→ Horaires de marées pour La Rochelle
-
-"Alexa, demande à Météo Marine un bulletin complet à Brest"
-→ Météo + marées pour Brest
-
+"Alexa, demande à Météo Marine la météo à Brest"
+"Alexa, demande à Météo Marine les marées à Royan"
+"Alexa, demande à Météo Marine un bulletin complet à Saint-Malo"
 "Alexa, demande à Météo Marine ma position"
-→ Force la détection via l'adresse de la box
 ```
 
 ---
 
-## 📍 Activation de la géolocalisation automatique
+## 🗺️ Ports disponibles
 
-Pour que la skill détecte automatiquement votre position :
+Tous les ports du site https://maree.shom.fr sont supportés.
+Le nom vocal est converti automatiquement en code SHOM.
 
-1. Ouvrez l'**application Alexa** sur votre téléphone
-2. Allez dans **Appareils** → sélectionnez votre Echo
-3. **Paramètres de l'appareil** → **Adresse de l'appareil**
-4. Renseignez votre adresse
-5. Dans **Compétences et jeux** → trouvez **Météo Marine**
-6. **Autorisations** → activez **Adresse complète de l'appareil**
+Ports préconfigurés : Brest, Saint-Malo, Cherbourg, Le Havre, Rouen,
+Calais, Dunkerque, Caen, Lorient, Vannes, Saint-Nazaire, Nantes,
+La Rochelle, Royan, Bordeaux, Arcachon, Bayonne, Biarritz,
+Saint-Jean-de-Luz, Marseille, Toulon, Nice, Monaco, Sète, Ajaccio, Bastia.
 
----
-
-## 🇫🇷 Alternative SHOM pour les marées françaises
-
-L'API SHOM est gratuite et précise pour les ports français.
-Remplacez `tidesService.js` par la version SHOM :
-
-```javascript
-// URL de l'API SHOM
-const SHOM_URL = 'https://services.data.shom.fr/hdm/tides/nextTidesForNextDays';
-
-// Ports disponibles : Brest, Cherbourg, Calais, Dunkerque, Rouen,
-// Le Havre, Saint-Malo, La Rochelle, Bayonne, Marseille, etc.
-
-function getShomTides(portName) {
-  const url = `${SHOM_URL}?harborName=${encodeURIComponent(portName)}&duration=1&nbDays=1`;
-  // ... requête HTTP
-}
-```
-
-Liste complète des ports SHOM : https://services.data.shom.fr/hdm/tides/portlist
+Pour ajouter un port, ajoutez-le dans `PORT_CODES` de `tidesService.js`.
 
 ---
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────┐     ┌──────────────────────┐     ┌─────────────────────┐
-│  Echo / Alexa   │────▶│  Alexa Skill Service  │────▶│  AWS Lambda         │
-│  (box ou app)   │◀────│  (Amazon)             │◀────│  (votre code)       │
-└─────────────────┘     └──────────────────────┘     └──────────┬──────────┘
-                                                                  │
-                                          ┌───────────────────────┼───────────────────────┐
-                                          ▼                       ▼                       ▼
-                               ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐
-                               │ OpenWeatherMap   │   │  WorldTides API  │   │  Alexa Device    │
-                               │ (météo marine)   │   │  (marées)        │   │  Address API     │
-                               └──────────────────┘   └──────────────────┘   └──────────────────┘
+Alexa ──▶ AWS Lambda
+               ├── weatherService.js ──▶ OpenWeatherMap (clé gratuite)
+               ├── tidesService.js   ──▶ SHOM vignette  (gratuit, sans clé)
+               └── locationService.js ─▶ Alexa Device Address API
 ```
 
 ---
 
-## 📁 Structure du projet
+## 📁 Structure
 
 ```
 alexa-meteo-marine/
-├── skill.json                          ← Manifest de la skill
-├── interactionModels/
-│   └── custom/
-│       └── fr-FR.json                  ← Modèle vocal français
-├── lambda/
-│   ├── index.js                        ← Handlers Alexa (point d'entrée)
-│   ├── package.json                    ← Dépendances Node.js
-│   └── services/
-│       ├── weatherService.js           ← API OpenWeatherMap
-│       ├── tidesService.js             ← API WorldTides
-│       └── locationService.js         ← Adresse box Alexa
-└── README.md                           ← Ce fichier
+├── skill.json
+├── README.md
+├── interactionModels/custom/fr-FR.json
+└── lambda/
+    ├── index.js
+    ├── package.json                  ← 0 dépendance externe SHOM !
+    └── services/
+        ├── weatherService.js
+        ├── tidesService.js           ← parse la vignette SHOM
+        └── locationService.js
 ```
 
 ---
 
 ## 🐛 Dépannage
 
-| Erreur | Cause probable | Solution |
-|--------|---------------|----------|
-| `ServiceError 403` | Permission adresse non accordée | Voir "Activation géolocalisation" |
-| `Ville introuvable` | Nom mal orthographié | Utilisez des noms de villes standards |
-| `401 Unauthorized` (OWM) | Clé API invalide ou inactive | Attendez 2h après création de la clé |
-| `402 Payment Required` (WorldTides) | Quota gratuit dépassé | Passez à un plan payant ou utilisez SHOM |
-| Timeout Lambda | Requêtes API lentes | Augmentez le timeout Lambda à 10s |
+| Erreur | Cause | Solution |
+|--------|-------|----------|
+| `HTTP 404` vignette | Code port inconnu | Vérifier sur maree.shom.fr |
+| `Aucune marée extraite` | Format vignette modifié par SHOM | Ouvrir une issue |
+| `ServiceError 403` (Alexa) | Permission adresse non accordée | Voir Étape 6 |
+| Timeout Lambda | APIs lentes | Timeout Lambda à 10s dans AWS Console |
 
 ---
 
 ## 📄 Licence
 
-MIT — Libre d'utilisation, modification et distribution.
+MIT — Données marées © SHOM (Licence Etalab 2.0).
+Mention obligatoire si publication : *"Données marées © SHOM – Licence Etalab 2.0"*

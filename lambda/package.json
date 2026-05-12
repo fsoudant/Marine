@@ -1,12 +1,11 @@
 {
   "name": "alexa-meteo-marine",
-  "version": "1.0.0",
-  "description": "Alexa Skill — Météo Marine et Marées pour les côtes françaises",
+  "version": "3.0.0",
+  "description": "Alexa Skill — Météo Marine et Marées — SHOM gratuit via vignette",
   "main": "index.js",
   "scripts": {
     "test": "node test/local.js",
-    "deploy": "ask deploy",
-    "package": "cd lambda && zip -r ../skill.zip . --exclude '*.git*' --exclude 'node_modules/.cache/*'"
+    "deploy": "ask deploy"
   },
   "dependencies": {
     "ask-sdk-core": "^2.14.0",
