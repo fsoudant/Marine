@@ -12,8 +12,8 @@
  */
 
 const Alexa = require('ask-sdk-core');
-const { geocodeCity, getMarineWeather, getWeatherForecast } = require('./services/weatherService');
-const { getTides } = require('./services/tidesService');
+const { geocodeCity, getMarineWeather } = require('./services/weatherService');
+const { getTides, formatDuration } = require('./services/tidesService');
 const { getDeviceLocation, getPermissionCard } = require('./services/locationService');
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -108,19 +108,20 @@ function buildTidesSpeech(tides, location) {
   }
   speech += `<break time="200ms"/>`;
   
-  // Prochaine marée
+  // Prochaine marée + durée
   if (tides.nextTide) {
     const next = tides.nextTide;
-    speech += `Prochaine marée : ${next.type} à ${next.time}, hauteur ${next.height} mètres. `;
+    const duree = formatDuration(next.minutesUntil);
+    speech += `Prochaine marée : ${next.type} à ${next.time}, ${duree}, hauteur ${next.height} mètres. `;
     speech += `<break time="200ms"/>`;
   }
   
-  // Toutes les marées du jour
-  const todayTides = tides.upcomingTides.filter(t => !t.isPast);
-  if (todayTides.length > 0) {
-    speech += `Horaires complets : `;
-    todayTides.forEach(t => {
-      speech += `${t.typeShort} à ${t.time}, ${t.height} mètres. `;
+  // Marées suivantes avec durée
+  const tidesApresLaPrec = tides.upcomingTides.slice(1);
+  if (tidesApresLaPrec.length > 0) {
+    speech += `Marées suivantes : `;
+    tidesApresLaPrec.forEach(t => {
+      speech += `${t.typeShort} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
     });
   }
   
@@ -161,7 +162,7 @@ const LaunchRequestHandler = {
         let speech = `<speak>Bienvenue dans Météo Marine pour ${deviceLoc.name}. `;
         speech += `Actuellement : vent de ${weather.windDirection} force ${b.force}, ${b.label}. `;
         speech += `Mer ${weather.seaState.label.toLowerCase()}. `;
-        if (next) speech += `Prochaine marée : ${next.type} à ${next.time}. `;
+        if (next) speech += `Prochaine marée : ${next.type} à ${next.time}, ${formatDuration(next.minutesUntil)}. `;
         speech += `<break time="300ms"/>Demandez la météo, les marées, ou un bulletin complet. </speak>`;
         
         return handlerInput.responseBuilder
@@ -345,12 +346,15 @@ const MeteoEtMareeIntentHandler = {
       if (tides.coefficient) {
         speech += `Coefficient ${tides.coefficient.value}, ${tides.coefficient.label}. `;
       }
-      const nextTides = tides.upcomingTides.filter(t => !t.isPast).slice(0, 4);
+      const nextTides = tides.upcomingTides.slice(0, 4);
       if (nextTides.length > 0) {
-        speech += `Horaires : `;
-        nextTides.forEach(t => {
-          speech += `${t.typeShort} à ${t.time} hauteur ${t.height} mètres. `;
-        });
+        speech += `Prochaine marée : ${nextTides[0].typeShort} à ${nextTides[0].time}, ${formatDuration(nextTides[0].minutesUntil)}, hauteur ${nextTides[0].height} mètres. `;
+        if (nextTides.length > 1) {
+          speech += `Puis : `;
+          nextTides.slice(1).forEach(t => {
+            speech += `${t.typeShort} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
+          });
+        }
       }
       
       speech += `</speak>`;
@@ -413,7 +417,7 @@ const MaPositionIntentHandler = {
       let speech = `<speak>Position détectée : ${deviceLoc.name}. `;
       speech += `Vent de ${weather.windDirection} force ${b.force}, ${b.label}. `;
       speech += `Mer ${weather.seaState.label.toLowerCase()}. `;
-      if (next) speech += `Prochaine marée : ${next.type} à ${next.time}, ${next.height} mètres. `;
+      if (next) speech += `Prochaine marée : ${next.type} à ${next.time}, ${formatDuration(next.minutesUntil)}, ${next.height} mètres. `;
       speech += `</speak>`;
       
       return handlerInput.responseBuilder.speak(speech).getResponse();

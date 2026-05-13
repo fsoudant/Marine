@@ -5,15 +5,28 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": ["annuler", "stop", "arrêter"]
+          "samples": [
+            "annuler",
+            "stop",
+            "arrêter"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": ["aide", "help", "comment ça marche"]
+          "samples": [
+            "aide",
+            "help",
+            "comment ça marche"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": ["stop", "arrête", "au revoir", "quitter"]
+          "samples": [
+            "stop",
+            "arrête",
+            "au revoir",
+            "quitter"
+          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
@@ -108,34 +121,141 @@
         {
           "name": "LOCATION_TYPE",
           "values": [
-            {"name": {"value": "Biarritz"}},
-            {"name": {"value": "Bayonne"}},
-            {"name": {"value": "Saint-Jean-de-Luz"}},
-            {"name": {"value": "La Rochelle"}},
-            {"name": {"value": "Royan"}},
-            {"name": {"value": "Bordeaux"}},
-            {"name": {"value": "Arcachon"}},
-            {"name": {"value": "Brest"}},
-            {"name": {"value": "Lorient"}},
-            {"name": {"value": "Vannes"}},
-            {"name": {"value": "Saint-Nazaire"}},
-            {"name": {"value": "Nantes"}},
-            {"name": {"value": "Saint-Malo"}},
-            {"name": {"value": "Cherbourg"}},
-            {"name": {"value": "Caen"}},
-            {"name": {"value": "Le Havre"}},
-            {"name": {"value": "Rouen"}},
-            {"name": {"value": "Calais"}},
-            {"name": {"value": "Dunkerque"}},
-            {"name": {"value": "Marseille"}},
-            {"name": {"value": "Toulon"}},
-            {"name": {"value": "Nice"}},
-            {"name": {"value": "Monaco"}},
-            {"name": {"value": "Ajaccio"}},
-            {"name": {"value": "Bastia"}},
-            {"name": {"value": "Sète"}},
-            {"name": {"value": "Montpellier"}},
-            {"name": {"value": "Perpignan"}}
+            {
+              "name": {
+                "value": "Biarritz"
+              }
+            },
+            {
+              "name": {
+                "value": "Bayonne"
+              }
+            },
+            {
+              "name": {
+                "value": "Saint-Jean-de-Luz"
+              }
+            },
+            {
+              "name": {
+                "value": "La Rochelle"
+              }
+            },
+            {
+              "name": {
+                "value": "Royan"
+              }
+            },
+            {
+              "name": {
+                "value": "Bordeaux"
+              }
+            },
+            {
+              "name": {
+                "value": "Arcachon"
+              }
+            },
+            {
+              "name": {
+                "value": "Brest"
+              }
+            },
+            {
+              "name": {
+                "value": "Lorient"
+              }
+            },
+            {
+              "name": {
+                "value": "Vannes"
+              }
+            },
+            {
+              "name": {
+                "value": "Saint-Nazaire"
+              }
+            },
+            {
+              "name": {
+                "value": "Nantes"
+              }
+            },
+            {
+              "name": {
+                "value": "Saint-Malo"
+              }
+            },
+            {
+              "name": {
+                "value": "Cherbourg"
+              }
+            },
+            {
+              "name": {
+                "value": "Caen"
+              }
+            },
+            {
+              "name": {
+                "value": "Le Havre"
+              }
+            },
+            {
+              "name": {
+                "value": "Rouen"
+              }
+            },
+            {
+              "name": {
+                "value": "Calais"
+              }
+            },
+            {
+              "name": {
+                "value": "Dunkerque"
+              }
+            },
+            {
+              "name": {
+                "value": "Marseille"
+              }
+            },
+            {
+              "name": {
+                "value": "Toulon"
+              }
+            },
+            {
+              "name": {
+                "value": "Nice"
+              }
+            },
+            {
+              "name": {
+                "value": "Monaco"
+              }
+            },
+            {
+              "name": {
+                "value": "Ajaccio"
+              }
+            },
+            {
+              "name": {
+                "value": "Bastia"
+              }
+            },
+            {
+              "name": {
+                "value": "Sète"
+              }
+            },
+            {
+              "name": {
+                "value": "Perpignan"
+              }
+            }
           ]
         }
       ]

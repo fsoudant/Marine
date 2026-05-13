@@ -17,7 +17,7 @@ const BASE_URL = 'api.openweathermap.org';
  */
 function geocodeCity(cityName) {
   return new Promise((resolve, reject) => {
-    const path = `/geo/1.0/direct?q=${encodeURIComponent(cityName)},FR&limit=1&appid=${API_KEY}`;
+    const path = `/geo/1.0/direct?q=${encodeURIComponent(cityName)}&limit=5&appid=${API_KEY}`;
     
     https.get({ hostname: BASE_URL, path }, (res) => {
       let data = '';
