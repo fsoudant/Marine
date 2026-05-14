@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "default": {
+      "skillId": "",
+      "skillMetadata": {
+        "src": "./skill-package"
+      },
+      "code": {
+        "default": {
+          "src": "./lambda"
+        }
+      }
+    }
+  }
+}

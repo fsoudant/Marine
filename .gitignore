@@ -1,3 +1,5 @@
 .DS_Store
 interactionModels/.DS_Store
 lambda/.DS_Store
+/lambda/node_modules
+skill.zip

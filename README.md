@@ -30,12 +30,14 @@ BM  18:08  2.52m  ---
 
 ---
 
+
+
 ## 🔑 Clés API nécessaires
 
 ### OpenWeatherMap (GRATUIT)
 - Compte sur https://openweathermap.org/api
 - Plan gratuit : 1 000 appels/jour
-- Variable d'env Lambda : `OPENWEATHER_API_KEY`
+
 
 ### SHOM — Aucune clé !
 Le service de vignette est public et gratuit.
