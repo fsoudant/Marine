@@ -5,7 +5,7 @@
         "fr-FR": {
           "name": "Météo Marine",
           "summary": "Obtenez la météo marine et les horaires de marées pour n'importe quel port français.",
-          "description": "Météo Marine vous donne instantanément les conditions en mer et les horaires de marées. Demandez la météo d'un lieu précis ou laissez la skill détecter votre position automatiquement.\n\nFonctionnalités :\n• Météo marine : vent, hauteur des vagues, houle, visibilité\n• Horaires des marées du jour (pleines et basses mers)\n• Coefficient de marée\n• Détection automatique de votre position\n• Support de tous les grands ports français",
+          "description": "Météo Marine vous donne instantanément les conditions en mer et les horaires de marées...",
           "examplePhrases": [
             "Alexa, ouvre Météo Marine",
             "Alexa, demande à Météo Marine la météo à Biarritz",
@@ -24,20 +24,21 @@
         }
       },
       "isAvailableWorldwide": false,
-      "targetedRegions": ["FR"],
       "category": "WEATHER",
-      "distributionCountries": ["FR"]
+      "distributionCountries": [
+        "FR"
+      ]
     },
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:eu-west-1:357621881595:function:meteo-marine-skill"
+          "uri": "arn:aws:lambda:eu-west-3:357621881595:function:meteo-marine-skill"
         },
         "interfaces": [],
         "regions": {
           "EU": {
             "endpoint": {
-              "uri": "arn:aws:lambda:eu-west-1:357621881595:function:meteo-marine-skill"
+              "uri": "arn:aws:lambda:eu-west-3:357621881595:function:meteo-marine-skill"
             }
           }
         }
@@ -46,9 +47,6 @@
     "permissions": [
       {
         "name": "alexa::devices:all:address:full:read"
-      },
-      {
-        "name": "alexa::devices:all:address:country_and_postal_code:read"
       }
     ],
     "privacyAndCompliance": {
@@ -59,8 +57,8 @@
       "containsAds": false,
       "locales": {
         "fr-FR": {
-          "privacyPolicyUrl": "https://votre-domaine.com/privacy",
-          "termsOfUseUrl": "https://votre-domaine.com/terms"
+         "privacyPolicyUrl": "https://fsoudant.github.io/Marine/privacy.html",
+		 "termsOfUseUrl": "https://fsoudant.github.io/Marine/terms.html"
         }
       }
     }

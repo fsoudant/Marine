@@ -66,21 +66,32 @@ cd lambda && zip -r ../skill.zip . && cd ..
 aws lambda create-function \
   --function-name meteo-marine-skill \
   --runtime nodejs18.x \
-  --role arn:aws:iam::VOTRE_ID:role/lambda-alexa-role \
+  --role arn:aws:iam::VOTRE_ID:role/Lambda-alexa-role \
   --handler index.handler \
   --timeout 10 \
-  --region eu-west-1 \
+  --region eu-west-3 \
   --zip-file fileb://skill.zip
 
 # Variable d'environnement
 aws lambda update-function-configuration \
   --function-name meteo-marine-skill \
   --environment "Variables={OPENWEATHER_API_KEY=VOTRE_CLE_OWM}" \
-  --region eu-west-1
+  --region eu-west-3
 ```
 
 ### 4. Mettre à jour skill.json
 Remplacez `VOTRE_ACCOUNT_ID` par votre vrai ID de compte AWS.
+
+
+### 4.1. Ajouter les persmissions
+```bash
+aws lambda add-permission \
+  --function-name meteo-marine-skill \
+  --statement-id alexa-skill-trigger \
+  --action lambda:InvokeFunction \
+  --principal alexa-appkit.amazon.com \
+  --region eu-west-3
+```
 
 ### 5. Déployer la skill
 ```bash

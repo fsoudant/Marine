@@ -58,30 +58,40 @@
           ]
         },
         {
-          "name": "MareeIntent",
-          "slots": [
-            {
-              "name": "location",
-              "type": "LOCATION_TYPE"
-            }
-          ],
-          "samples": [
-            "marées",
-            "les marées",
-            "horaires des marées",
-            "marées à {location}",
-            "horaires des marées à {location}",
-            "les marées à {location}",
-            "quand est la prochaine marée à {location}",
-            "prochain coefficient à {location}",
-            "coefficient de marée à {location}",
-            "à quelle heure est la marée à {location}",
-            "pleine mer à {location}",
-            "basse mer à {location}",
-            "les marées de {location}",
-            "horaires des marées pour {location}"
-          ]
-        },
+  			"name": "MareeIntent",
+  			"slots": [
+  			  {
+      			"name": "location",
+      			"type": "LOCATION_TYPE"
+   			 }
+ 			 ],
+ 			 "samples": [
+  			  "marées à {location}",
+  			  "les marées à {location}",
+  			  "horaires des marées à {location}",
+  			  "horaires de marées à {location}",
+  			  "donne moi les marées à {location}",
+  			  "donne moi les horaires de marées à {location}",
+  			  "quand est la prochaine marée à {location}",
+  			  "coefficient de marée à {location}",
+  			  "à quelle heure est la marée à {location}",
+  			  "pleine mer à {location}",
+  			  "basse mer à {location}",
+   			 "les marées de {location}",
+   			 "horaires des marées pour {location}",
+   			 "marée à {location}",
+   			 "prochain coefficient à {location}",
+   			 "hauteur de marée à {location}",
+   			 "coefficient à {location}",
+   			 "la prochaine marée à {location}",
+			 "prochaine marée à {location}",
+			 "quelle est la prochaine marée à {location}",
+			 "quand est la prochaine marée à {location}",
+			 "prochaine pleine mer à {location}",
+			 "prochaine basse mer à {location}",
+			 "à quelle heure est la prochaine marée à {location}"
+ 			 ]
+		},
         {
           "name": "MeteoEtMareeIntent",
           "slots": [
@@ -101,6 +111,25 @@
             "rapport complet pour {location}"
           ]
         },
+        {
+ 		 "name": "BulletinVoileIntent",
+ 		 "slots": [
+  		  {
+   		   "name": "location",
+   		   "type": "LOCATION_TYPE"
+  		  }
+  		],
+ 		 "samples": [
+   		 "bulletin voile à {location}",
+   		 "bulletin voile pour {location}",
+   		 "bulletin voile {location}",
+   		 "voile à {location}",
+   		 "navigation à {location}",
+   		 "sortie voile à {location}",
+   		 "je pars en voile à {location}",
+   		 "conditions voile à {location}"
+ 		 ]
+		},
         {
           "name": "MaPositionIntent",
           "slots": [],

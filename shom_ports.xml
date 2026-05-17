@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<harbors>
+	<harbor cst="ABER_BENOIT_MEAN_RENEAT" name="L'Aber Benoît" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ABER_WRAC_H" name="L'Aber Wrac'h" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ABIDJAN-VRIDI" name="Abidjan" country="Côte d''Ivoire" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="AGADIR" name="Agadir" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="AHE_TENUKUPARA" name="Ahe" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="AIGUILLON_SUR_MER" name="L'Aiguillon-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="AJACCIO" name="Ajaccio" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ALDERNEY_BRAYE" name="Alderney (Braye)" country="Îles Anglo-Normandes" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="ALPHA-BAIE_DE_SEINE" name="Alpha-Baie de Seine" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ANSE_LONGUE_NAMAOURA" name="Anse Longue Namaoura" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ANTIFER" name="Le Havre-Antifer (Terminal pétrolier)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ANTSIRANANA" name="Antsiranana" country="Madagascar" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="ARCACHON_EYRAC" name="Arcachon" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ARRADON" name="Arradon" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ARROMANCHES-LES-BAINS" name="Arromanches-les-Bains" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ARUTUA" name="Arutua" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="AUDIERNE" name="Audierne (Quai Pelletan)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="AURAY_SAINT-GOUSTAN" name="Auray (St-Goustan)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="AVATORU_LAGON" name="Avatoru lagon" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_DE_BANARE_POUM" name="Baie de Banaré (Poum)" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_DE_CHASSELOUP" name="Baie Chasseloup" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_DE_GADJI" name="Baie de Gadji" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_DE_GOMEN" name="Baie de Gomen" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_DU_PRONY" name="Baie du Prony" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_DU_STIFF" name="Baie du Stiff (Île d'Ouessant)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BAIE_HOPEFUL" name="Baie Hopeful" country="France (Îles Kerguelen)" defaultUT="5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_LAROSE" name="Baie Larose" country="France (Îles Kerguelen)" defaultUT="5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_NORVEGIENNE" name="Baie Norvégienne" country="France (Îles Kerguelen)" defaultUT="5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BAIE_OISEAU" name="Baie Oiseau" country="France (Îles Kerguelen)" defaultUT="5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BALISE_A" name="PK 364,775 : Balise A" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="1" />
+	<harbor cst="BANC_DE_LA_ZELEE" name="Banc de la Zélée" country="France (Îles Éparses)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BANYULS" name="Banyuls-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BARFLEUR" name="Barfleur" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BASE_DUMONT_D_URVILLE" name="Base Dumont d'Urville" country="France (Terre Adélie)" defaultUT="10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BASSAS_DA_INDIA" name="Bassas da India" country="France (Îles Éparses)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BASSE_TERRE" name="Basse-Terre" country="France (Guadeloupe)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BASTIA" name="Bastia" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BENODET" name="Bénodet" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BEYROUTH" name="Beyrouth" country="Liban" defaultUT="2" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="BINIC" name="Binic" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BISCARROSSE" name="Biscarrosse" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BOLAMA" name="Bolama" country="Guinée-Bissau" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="BONIFACIO" name="Bonifacio" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BORDEAUX" name="Bordeaux" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="6" />
+	<harbor cst="BOUCAU-BAYONNE" name="Boucau-Bayonne" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BOUEE_FORT-MAHON" name="Berck Plage - Fort Mahon" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BOUEE_FROMENTINE" name="Bouée Fromentine" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BOUEE_LE_GOELAND" name="Bouée Le Goéland" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BOUJDOUR" name="Boujdour" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BOULOGNE-SUR-MER" name="Boulogne-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BOURAIL" name="Bourail" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="BREHAT_MEN_JOLIGUET" name="Île de Bréhat" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BREHEC" name="Brehec" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BREST" name="Brest" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BREST_MOULIN-BLANC" name="Moulin Blanc" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BRIGNOGAN" name="Brignogan-Plage" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="BUBAQUE" name="Bubaque" country="Guinée Bissau" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="CALAIS" name="Calais" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CALVI" name="Calvi" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CAMARET-SUR-MER" name="Camaret-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CANCALE" name="Cancale" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CAPBRETON" name="Capbreton" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CAP_CHEVALIER_MARTINIQUE" name="Cap Chevalier" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="CAP_FERRET" name="Cap Ferret" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CARTERET" name="Carteret" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CASABLANCA" name="Casablanca" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="CAYEUX-SUR-MER" name="Cayeux-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CENTURI" name="Centuri" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CEUTA" name="Ceuta" country="Espagne" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="CHEPENEHE" name="Chépénéhé" country="France (Île Lifou)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="CHERBOURG" name="Cherbourg" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CLIPPERTON" name="Clipperton" country="France" defaultUT="-7" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="CONAKRY" name="Conakry" country="Guinée" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="CONCARNEAU" name="Concarneau" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="CORDOUAN" name="Cordouan" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="COTONOU" name="Cotonou" country="Bénin" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="COURSEULLES_LARGE" name="Courseulles-sur-Mer (Large)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DAHOUET" name="Dahouet" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DAKAR" name="Dakar" country="Sénégal" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="DAKHLA" name="Dakhla" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="DEAUVILLE" name="Trouville-Deauville" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="1" />
+	<harbor cst="DEGRAD_DES_CANNES" name="Dégrad des Cannes" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="DESHAIES" name="Deshaies" country="France (Guadeloupe)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="DIELETTE" name="Diélette" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DIEPPE" name="Dieppe" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DIVES-SUR-MER" name="Dives-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="1" />
+	<harbor cst="DJIBOUTI" name="Djibouti" country="République de Djibouti" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="DJOGUE" name="Rivière Casamance (Djogué)" country="Sénégal" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="DOUALA" name="Douala" country="Cameroun" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="DOUARNENEZ" name="Douarnenez" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DOUEOULOU" name="Douéoulou" country="France (Île Lifou)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="DUNKERQUE" name="Dunkerque" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DUNKERQUE_OUEST" name="Dunkerque Ouest" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="DZAOUDZI" name="Dzaoudzi" country="France (Mayotte)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="EIAO_VAITUHA" name="Île Eiao" country="France (Îles Marquises)" defaultUT="-9.5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="EL_MHIREZ" name="El Mhirez" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ENTREE_BAIE_DE_SOMME" name="Bouée entrée Baie de Somme (AT-SO)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ENTREE_RIVIERE_ETEL" name="Entrée rivière d'Étel" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ERQUY_PORT" name="Erquy" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ESSAOUIRA" name="Essaouira (Mogador)" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ETEL" name="Port d'Étel" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ETRETAT" name="Étretat" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="FAKARAVA_ROTOAVA" name="Rotoava" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FAKARAVA_TETAMANU" name="Tetamanu" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FANGATAUFA_FREGATE" name="Fangataufa (Frégate)" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FANGATAUFA_LARGE" name="Fangataufa (large)" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FARATEA_TARAVAO" name="Faratea Taravao" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FECAMP" name="Fécamp" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="FORT-BOYARD" name="Fort Boyard" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="FORT-DE-FRANCE" name="Fort-de-France" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FORT-ESPAGNOL" name="Fort Espagnol" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="FOS_SUR_MER" name="Fos-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="FOUE" name="Foué" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="FROMENTINE_EMBARCADERE" name="Fromentine (embarcadère)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="GEYSER" name="Récif du Geyser" country="France (Îles Éparses)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="GLENAN_PENFRET" name="Penfret (Îles de Glénan)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="GORO" name="Goro" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="GOURY" name="Goury" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="GRANDCAMP" name="Grandcamp (Entrée chenal de Carentan)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="GRANVILLE_LE_COCALEU" name="Granville" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="GRAVELINES" name="Gravelines" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="GUSTAVIA" name="Gustavia" country="France" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="HAKAHAU" name="Hakahau" country="France (Îles Marquises)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="HAO_PASSE_KAKI" name="Hao (Passe Kaki)" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="HELLVILLE" name="Hellville" country="Madagascar" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="HENDAYE" name="Hendaye" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="HERQUEVILLE" name="Herqueville" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="HIENGHENE" name="Hienghène" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="HOEDIC" name="Hoëdic" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="HONFLEUR" name="PK 355,850 : Honfleur" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="1" />
+	<harbor cst="HOUAT" name="Houat" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILES_CHAUSEY" name="Grande-Île (Îles Chausey)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILES_DU_SALUT" name="Îles du Salut" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILES_GLORIEUSES" name="Îles Glorieuses" country="France (Îles Éparses)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILES_SAINT-MARCOUF" name="Îles Saint-Marcouf" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILET_LA_MERE" name="Îlet la Mère" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_AMEDEE" name="Île Amédée" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_AUX_MOINES_ER_GORED" name="Île aux Moines" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILE_CROZET" name="Ile Crozet" country="France (TAAF)" defaultUT="4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_DE_SEIN_NORD" name="Île de Sein" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILE_D_AIX" name="Île d'Aix" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILE_EUROPA" name="Île Europa" country="France (Îles Éparses)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_JUAN_DE_NOVA" name="Île Juan de Nova" country="France (Îles Éparses)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_KOMAYTOU_LARGE" name="Île Komaytou" country="République de Djibouti" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="ILE_LONGUE_CHESTERFIELD" name="Île Longue" country="France (Îles Chesterfield)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_MIQUELON" name="Île Miquelon" country="France (Saint-Pierre-et-Miquelon)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_ROUSSE" name="Île-Rousse" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ILE_SAINT-PAUL" name="Saint-Paul" country="France (Île Saint-Paul)" defaultUT="5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILE_SAINT-PIERRE" name="Saint-Pierre" country="France (Saint-Pierre-et-Miquelon)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ILOT_MATO" name="Îlot Mato" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="JORF_LASFAR" name="Jorf Lasfar" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="KAMSAR" name="Kamsar" country="Guinée" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="KOUAKOUE" name="Baie de Kouakoué" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="KOUMAC" name="Koumac" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="KOUROU" name="Kourou" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="KSAR_ES_SRHIR" name="Ksar es Sghir" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="KUTO" name="Baie de Kuto" country="France (Île des Pins)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LAAYOUNE" name="Laayoune" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LACANAU_LARGE" name="Lacanau" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LANILDUT" name="L'Aber Ildut" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LARMOR-BADEN" name="Larmor-Baden" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LA_COTINIERE" name="La Cotinière" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LA_DESIRADE" name="La Désirade" country="France (Guadeloupe)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LA_FIGUEIRETTE" name="La Figueirette" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LA_PALMYRE" name="La Palmyre" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LA_ROCHE" name="La Roche" country="France (Île Maré)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LA_ROCHELLE-PALLICE" name="La Rochelle - La Pallice" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LA_TRINITE-SUR-MER" name="La Trinité-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LA_TRINITE_MARTINIQUE" name="La Trinité" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LEAVA_FUTUNA" name="Leava (Futuna)" country="France (Îles Futuna et Alofi)" defaultUT="12" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LESCONIL" name="Lesconil" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LES_ARDENTES" name="Les Ardentes" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LES_HATTES" name="Pointe Française (Pointe des Hattes)" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LES_HEAUX-DE-BREHAT" name="Les Héaux-de-Bréhat" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LES_MINQUIERS" name="Les Minquiers" country="Îles Anglo-Normandes" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="LES_OITELLIERES" name="Île des Hébihens" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LES_SABLES-D_OLONNE" name="Les Sables d'Olonne" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LEZARDRIEUX_PORT" name="Lézardrieux" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_CONQUET" name="Le Conquet" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_CROISIC" name="Le Croisic" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_CROUESTY" name="Port du Crouesty" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_DELLEC" name="Le Dellec" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_FRANCOIS" name="Le François" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LE_GRAND_CHARPENTIER" name="Le Grand Charpentier" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_GUILVINEC" name="Le Guilvinec" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_HAVRE" name="Le Havre" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="1" />
+	<harbor cst="LE_LARIVOT" name="Le Larivot" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LE_LEGUE_BOUEE" name="Le Légué (Bouée)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_LOGEO" name="Le Logeo" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_MARIN" name="Le Marin" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LE_PALAIS" name="Le Palais (Belle-Île)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_POULDU" name="Le Pouldu" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_POULIGUEN" name="Le Pouliguen" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_ROBERT" name="Le Robert" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LE_SENEQUET" name="Le Sénéquet" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_TOUQUET" name="Le Touquet-Étaples" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_TREPORT" name="Le Tréport" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LE_VAUCLIN" name="Le Vauclin" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LIBREVILLE" name="Libreville" country="Gabon" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="LOCMARIAQUER" name="Locmariaquer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LOCQUEMEAU" name="Locquemeau" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LOCQUIREC" name="Locquirec" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LOCTUDY" name="Loctudy" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="LOME" name="Lomé" country="Togo" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="LONGONI" name="Longoni" country="France (Mayotte)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="L_ECREVIERE" name="Bouée Ecrevière" country="Îles Anglo-Normandes" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="L_HERBAUDIERE" name="L'Herbaudière (Île de Noirmoutier)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="MAHAMATE" name="Mahamaté" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MAKATEA" name="Makatea" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MAMIE" name="Rivière de Mamié (Entrée)" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MARIE-GALANTE_GD_BOURG" name="Marie-Galante" country="France (Guadeloupe)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MARSEILLE" name="Marseille (Corniche)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="MATAVAI" name="Matavai" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MAZAGAN" name="El Jadida (Mazagan)" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MEHDIA" name="Mehdia" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MIMIZAN" name="Mimizan" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="MOHAMMEDIA" name="Mohammedia" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MOLENE_NORD" name="Île Molène" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="MONACO" name="Monaco" country="Principauté de Monaco" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="MOOREA_HAAPITI" name="Haapiti" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MOOREA_PAPETOAI" name="Papetoai" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="MORGAT" name="Morgat" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="MORLAIX_PEN_AL_LANN" name="Château du Taureau" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="MURUROA_ANEMONE" name="Mururoa" country="France (Polynésie française)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="NEPOUI" name="Mueo (Nepoui)" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="NICE" name="Nice" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="NOUADHIBOU" name="Nouadhibou" country="Mauritanie" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="NOUAKCHOTT" name="Nouakchott" country="Mauritanie" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="NOUMEA_CHALEIX" name="Nouméa - Chaleix" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="NOUMEA_NUMBO" name="Nouméa - Numbo" country="France (Nouvelle-Calédonie)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="N_DIE" name="Îlot N'Dié" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="N_DO" name="Îlot N'Do" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="OMONVILLE-LA-ROGUE" name="Omonville-la-Rogue" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="OUANO" name="Ouano" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="OUARA" name="Baie Ouara" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="OUESSANT_LAMPAUL" name="Baie de Lampaul (Île d'Ouessant)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="OUINNE" name="Baie Ouinné" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="OUISTREHAM" name="Ouistreham" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="1" />
+	<harbor cst="PAAGOUMENE" name="Paagoumène" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PAIMPOL" name="Paimpol" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PAPEETE_FARE-UTE" name="Papeete" country="France (Polynésie française)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PASSAGE_SAINT-ARMEL" name="Saint-Armel (Le Passage)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PENERF" name="Pénerf" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PERROS-GUIREC_TRESTRAOU" name="Perros-Guirec" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PLOGOFF" name="Plogoff" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PLOGOFF_PORT-DU-VORLEN" name="Port du Vorlen" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PLOUMANACH" name="Ploumanac'h" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="POAMBOA" name="Pouembout" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POINGAM" name="Poingam" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POINTE-A-PITRE" name="Pointe-à-Pitre" country="France (Guadeloupe)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POINTE-AIGUILLON" name="Pointe de l'Aiguillon" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="POINTE-DE-PANDOP" name="Pointe de Pandop" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POINTE_DES_GALETS" name="Pointe des Galets" country="France (La Réunion)" defaultUT="4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POINTE_DE_GATSEAU" name="Pointe de Gatseau" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="POINTE_DE_SAINT-GILDAS" name="Pointe de Saint-Gildas" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="POINTE_D_AGON" name="Pointe d'Agon" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="POINTE_NOIRE" name="Pointe-Noire" country="Congo" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PONERIHOUEN" name="Ponérihouen" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PONT_SEUDRE" name="Pont aval de la Seudre" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORNIC" name="Pornic" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORNICHET" name="Pornichet" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORO" name="Poro" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT-AUX-FRANCAIS" name="Port-aux-Français" country="France (Îles Kerguelen)" defaultUT="5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT-BENI" name="Port-Béni" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-BLOC" name="Pointe de Grave" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-BOISE" name="Port Boisé" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT-COMBUI" name="Port-Combui" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT-EN-BESSIN" name="Port-en-Bessin" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-GENTIL" name="Port-Gentil" country="Gabon" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="PORT-HALIGUEN" name="Port-Haliguen" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-JOINVILLE" name="Port-Joinville (Île d'Yeu)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-LOUIS_LOCMALO" name="Port-Louis (Locmalo)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-MARIA" name="Port-Maria" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-MARTIN" name="Port-Martin" country="France (Terre Adélie)" defaultUT="10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT-NAVALO" name="Port-Navalo" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-TUDY" name="Port-Tudy" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT-VENDRES" name="Port-Vendres" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORTBAIL" name="Portbail" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORTIVY" name="Portivy" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORTSALL" name="Portsall" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_CAMARGUE" name="Port Camargue" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_COMMERCE_LORIENT" name="Lorient (Port de commerce)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_DE_BOUC" name="Port-de-Bouc" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_DE_BOULARI" name="Port de Boulari" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT_DE_PRONY" name="Port de Prony" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PORT_FERREOL" name="Port Ferréol" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_LA_FORET" name="Port-la-Forêt" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_LA_NOUVELLE" name="Port-la-Nouvelle" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_MANECH" name="Port Manec'h" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PORT_SONARA" name="Port Sonara" country="Cameroun" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="POUEBO" name="Pouébo" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POUHEVA_MAKEMO" name="Makemo" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="POYA" name="Poya" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="PRIMEL" name="Anse de Primel" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="PTE_DE_GRAVE_LE_VERDON" name="Le Verdon-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="QUAI_DE_FARE" name="Mouillage de Fare" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="RABAT" name="Rabat" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="RAIRUA" name="Raivavae" country="France (Polynésie française)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="RAPA" name="Rapa" country="France (Archipel des Australes)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="RECIF_MTITI" name="Mtiti" country="France (Mayotte)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="RHO" name="Baie de Ro" country="France (Île Maré)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="RICHARD" name="Richard" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="RIKITEA" name="Rikitea" country="France (Polynésie française)" defaultUT="-9" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ROCHERS_NOIRS" name="Rochers Noirs - Tubuai" country="France (Archipel des Australes)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="ROCHES_DOUVRES" name="Les Roches Douvres" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ROSCOFF" name="Roscoff" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ROYAN" name="Royan" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="RUYTINGEN_SW" name="Ruytingen" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SADA" name="Sada - Baie de Chiconi" country="France (Mayotte)" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAFI" name="Safi" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAFI_SUD" name="Nouveau Port de Safi" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT-CAST" name="Saint-Cast" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-DENIS_D_OLERON" name="Saint-Denis d'Oléron" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-GERMAIN-SUR-AY" name="Saint-Germain-sur-Ay" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-GUENOLE" name="Saint-Guénolé" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-LAURENT_DU_MARONI" name="Saint-Laurent du Maroni" country="France (Guyane)" defaultUT="-3" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT-LEU" name="Saint-Leu" country="France (La Réunion)" defaultUT="4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT-MALO" name="Saint-Malo" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-MARTIN_DE_RE" name="Saint-Martin-de-Ré (Île de Ré)" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-MARTIN_MARIGOT" name="Saint-Martin Marigot" country="France (Saint-Martin)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT-NAZAIRE" name="Saint-Nazaire" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-PIERRE_LA_REUNION" name="Saint-Pierre" country="France (La Réunion)" defaultUT="4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT-PIERRE_MARTINIQUE" name="Saint-Pierre" country="France (Martinique)" defaultUT="-4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT-QUAY-PORTRIEUX" name="Saint-Quay-Portrieux" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-VAAST-LA-HOUGUE" name="Saint-Vaast-la-Hougue" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT-VALERY-EN-CAUX" name="Saint-Valery-en-Caux" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINTE_EVETTE" name="Sainte Evette" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINTE_MARIE_LA_REUNION" name="Sainte-Marie" country="France (La Réunion)" defaultUT="4" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SAINT_BRIAC_SUR_MER" name="Saint-Briac-sur-Mer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAINT_HELIER" name="Saint Helier" country="Îles Anglo-Normandes" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="SAINT_LOUIS" name="Saint-Louis" country="Sénégal" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="SANDETTIE_EST" name="Banc du Sandettié" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SAN_PEDRO" name="San Pedro" country="Côte d''Ivoire" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="SASSANDRA" name="Sassandra" country="Côte d''Ivoire" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="SELAATA" name="Selaata" country="Liban" defaultUT="2" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="SETE" name="Port de Sète" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SFAX" name="Sfax" country="Tunisie" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="SOCOA" name="Saint-Jean-de-Luz" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SOLENZARA" name="Solenzara" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="SOUR" name="Sour" country="Liban" defaultUT="2" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="ST-GILLES-CROIX-DE-VIE" name="Saint-Gilles-Croix-de-Vie" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="ST-PETER_PORT" name="Guernsey (St Peter Port)" country="Îles Anglo-Normandes" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="SURPRISE" name="Île Surprise" country="France (Récifs D''Entrecasteaux)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TADINE" name="Baie de Tadine" country="France (Île Maré)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TAHANEA" name="Tahanea" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TAIOHAE_SHOM" name="Taiohae" country="France (Polynésie française)" defaultUT="-9.5" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TAMAJARUSH" name="Tamajarush" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TAN-TAN" name="Tan-Tan" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TANGER" name="Tanger" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TANGER_MED" name="Tanger Med" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TAO" name="Tao" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TARFAYA" name="Tarfaya" country="Maroc" defaultUT="0" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TARIFA" name="Tarifa" country="Espagne" defaultUT="1" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="TAUTIRA" name="Tautira" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TEAVAROA" name="Teavaroa" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TEHERE" name="Tehere" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="THIO" name="Thio" country="France (Nouvelle-Calédonie)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TIBARAMA" name="Tibarama" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TIGA" name="Tiga" country="France (Île Tiga)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TINDUFF" name="Tinduff" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="TOAMASINA" name="Toamasina" country="Madagascar" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="TOAU" name="Toau" country="France (Archipel des Tuamotu)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TOLIARA" name="Toliara" country="Madagascar" defaultUT="3" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="TOMO_NOUVELLE_CALEDONIE" name="Tomo" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TOUHO" name="Baie de Touho" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="TOULON" name="Toulon" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="0" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="TREBEURDEN" name="Trébeurden" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="TREGUIER" name="Tréguier" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="TREHIGUIER" name="Tréhiguier" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="TREZ-HIR" name="Trez-Hir" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="TRIPOLI_LIBAN" name="Tripoli" country="Liban" defaultUT="2" additionalUT="0" isCoeffAvailable="0" isOfficial="0" hLegale="0" nota="0" />
+	<harbor cst="UALA" name="Uala (Île Art)" country="France (Îles Belep)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="UTUROA" name="Uturoa" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="VAIARE" name="Vaiare" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="VAIRAO_OUTUTAATA" name="Vairao Oututaata" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="VAITAPE_BORA-BORA" name="Vaitape" country="France (Archipel de la Société)" defaultUT="-10" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="VANNES" name="Vannes" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="VAVOUTO" name="Vavouto" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="VERGOYER_EST" name="Banc du Vergoyer" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="VIEUX-BOUCAU" name="Vieux-Boucau" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="WADRILLA_OUVEA" name="Wadrilla" country="France (Île Ouvéa)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="WALLIS_HALALO" name="Halalo" country="France (Îles Wallis)" defaultUT="12" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="WALLIS_MATA_UTU" name="Mata-Utu" country="France (Îles Wallis)" defaultUT="12" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="WE_LIFOU" name="Wé" country="France (Île Lifou)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="WHARF_DE_PLUM" name="Plum" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="WISSANT" name="Wissant" country="France" defaultUT="1" additionalUT="2" isCoeffAvailable="1" isOfficial="1" hLegale="1" nota="0" />
+	<harbor cst="YANDE" name="Yandé" country="France (Îles Belep)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+	<harbor cst="YATE" name="Yaté" country="France (Grande Terre)" defaultUT="11" additionalUT="0" isCoeffAvailable="0" isOfficial="1" hLegale="0" nota="0" />
+</harbors>

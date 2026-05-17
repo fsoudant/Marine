@@ -1,0 +1,164 @@
+Ajaccio
+Alpha-Baie de Seine
+Anse de Primel
+Arcachon
+Arradon
+Arromanches-les-Bains
+Audierne (Quai Pelletan)
+Auray (St-Goustan)
+Baie de Lampaul (Île d'Ouessant)
+Banyuls-sur-Mer
+Barfleur
+Bastia
+Bénodet
+Binic
+Biscarrosse
+Bonifacio
+Bordeaux
+Boucau-Bayonne
+Bouée Fromentine
+Boulogne-sur-Mer
+Brehec
+Brest
+Brignogan-Plage
+Calais
+Calvi
+Camaret-sur-Mer
+Cancale
+Cap Ferret
+Capbreton
+Carteret
+Cayeux-sur-Mer
+Centuri
+Cherbourg
+Concarneau
+Cordouan
+Courseulles-sur-Mer (Large)
+Dahouet
+Diélette
+Dieppe
+Dives-sur-Mer
+Douarnenez
+Dunkerque
+Erquy
+Étretat
+Fécamp
+Fort Boyard
+Fos-sur-Mer
+Fromentine (embarcadère)
+Généré automatiquement depuis shom_ports.xml
+Goury
+Grandcamp (Entrée chenal de Carentan)
+Grande-Île (Îles Chausey)
+Granville
+Gravelines
+Hendaye
+Herqueville
+Hoëdic
+Houat
+Île aux Moines
+Île d'Aix
+Île de Bréhat
+Île de Sein
+Île Molène
+Île-Rousse
+Îles Saint-Marcouf
+L'Aber Ildut
+L'Aiguillon-sur-Mer
+L'Herbaudière (Île de Noirmoutier)
+La Cotinière
+La Palmyre
+La Rochelle - La Pallice
+La Trinité-sur-Mer
+Lacanau
+Larmor-Baden
+Le Conquet
+Le Croisic
+Le Dellec
+Le Guilvinec
+Le Havre
+Le Havre-Antifer (Terminal pétrolier)
+Le Légué (Bouée)
+Le Logeo
+Le Palais (Belle-Île)
+Le Pouldu
+Le Pouliguen
+Le Sénéquet
+Le Touquet-Étaples
+Le Tréport
+Le Verdon-sur-Mer
+Les Ardentes
+Les Héaux-de-Bréhat
+Les Sables d'Olonne
+Lesconil
+Lézardrieux
+Locmariaquer
+Locquemeau
+Locquirec
+Loctudy
+Lorient (Port de commerce)
+Marseille (Corniche)
+Mimizan
+Morgat
+Moulin Blanc
+Nice
+Omonville-la-Rogue
+Ouistreham
+Paimpol
+Pénerf
+Penfret (Îles de Glénan)
+Perros-Guirec
+Plogoff
+Ploumanac'h
+Pointe de Grave
+Pointe de Saint-Gildas
+Pornic
+Pornichet
+Port Camargue
+Port d'Étel
+Port de Sète
+Port Manec'h
+Port-Béni
+Port-de-Bouc
+Port-en-Bessin
+Port-Haliguen
+Port-Joinville (Île d'Yeu)
+Port-la-Forêt
+Port-la-Nouvelle
+Port-Louis (Locmalo)
+Port-Maria
+Port-Navalo
+Port-Tudy
+Port-Vendres
+Portbail
+Portivy
+Portsall
+Richard
+Roscoff
+Royan
+Saint-Armel (Le Passage)
+Saint-Briac-sur-Mer
+Saint-Cast
+Saint-Denis d'Oléron
+Saint-Germain-sur-Ay
+Saint-Gilles-Croix-de-Vie
+Saint-Guénolé
+Saint-Jean-de-Luz
+Saint-Malo
+Saint-Martin-de-Ré (Île de Ré)
+Saint-Nazaire
+Saint-Quay-Portrieux
+Saint-Vaast-la-Hougue
+Saint-Valery-en-Caux
+Sainte Evette
+Solenzara
+Tinduff
+Toulon
+Trébeurden
+Tréguier
+Tréhiguier
+Trez-Hir
+Trouville-Deauville
+Vannes
+Vieux-Boucau
+Wissant

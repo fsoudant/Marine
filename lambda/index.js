@@ -381,6 +381,72 @@ const MeteoEtMareeIntentHandler = {
 };
 
 /**
+ * BulletinVoileInten — Bulletin complet météo +prochaine marée
+ */
+
+const BulletinVoileIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'BulletinVoileIntent';
+  },
+  async handle(handlerInput) {
+    const locationSlot = Alexa.getSlot(handlerInput.requestEnvelope, 'location');
+    try {
+      const location = await resolveLocation(handlerInput, locationSlot);
+      if (!location) {
+        return handlerInput.responseBuilder
+          .speak('<speak>Pour quel port souhaitez-vous le bulletin voile ?</speak>')
+          .reprompt('<speak>Quel port ?</speak>')
+          .getResponse();
+      }
+      if (location.permissionRequired) {
+        return handlerInput.responseBuilder
+          .speak('<speak>Autorisez l\'accès à votre adresse dans l\'app Alexa ou précisez un lieu.</speak>')
+          .withAskForPermissionsConsentCard(['read::alexa:device:all:address'])
+          .getResponse();
+      }
+
+      const [weather, tides] = await Promise.all([
+        getMarineWeather(location.lat, location.lon),
+        getTides(location.lat, location.lon, location.name)
+      ]);
+
+      const locationLabel = location.source === 'box'
+        ? `votre position (${location.name})` : location.name;
+      const b = weather.beaufort;
+      const next = tides.nextTide;
+
+      let speech = `<speak>Bulletin voile pour ${locationLabel}. `;
+      speech += `<break time="200ms"/>`;
+      speech += `${weather.description}. `;
+      speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
+      speech += `${b.label}. `;
+      speech += `${weather.seaState.label}. `;
+      if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
+      speech += `<break time="300ms"/>`;
+      speech += `Marées : la mer est ${tides.currentPhase}. `;
+      if (tides.coefficient) {
+        speech += `Coefficient ${tides.coefficient.value}, ${tides.coefficient.label}. `;
+      }
+      if (next) {
+        speech += `Prochaine marée : ${next.typeShort} à ${next.time}, `;
+        speech += `${require('./services/tidesService').formatDuration(next.minutesUntil)}, `;
+        speech += `hauteur ${next.height} mètres. `;
+      }
+      speech += `</speak>`;
+
+      return handlerInput.responseBuilder.speak(speech).getResponse();
+
+    } catch (err) {
+      console.error('BulletinVoile error:', err);
+      return handlerInput.responseBuilder
+        .speak('<speak>Désolé, je n\'ai pas pu obtenir le bulletin voile. Réessayez.</speak>')
+        .getResponse();
+    }
+  }
+};
+
+/**
  * MaPositionIntent — Force la détection de la box
  */
 const MaPositionIntentHandler = {
@@ -515,6 +581,7 @@ exports.handler = Alexa.SkillBuilders.custom()
     MeteoMarineIntentHandler,
     MareeIntentHandler,
     MeteoEtMareeIntentHandler,
+    BulletinVoileIntentHandler,
     MaPositionIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
