@@ -51,7 +51,7 @@
     ],
     "privacyAndCompliance": {
       "allowsPurchases": false,
-      "usesPersonalInfo": true,
+      "usesPersonalInfo": false,
       "isChildDirected": false,
       "isExportCompliant": true,
       "containsAds": false,
