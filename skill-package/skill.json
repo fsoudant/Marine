@@ -3,13 +3,13 @@
     "publishingInformation": {
       "locales": {
         "fr-FR": {
-          "name": "Météo Marine",
+          "name": "Cap Météo",
           "summary": "Obtenez la météo marine et les horaires de marées pour n'importe quel port français.",
-          "description": "Météo Marine vous donne instantanément les conditions en mer et les horaires de marées...",
+          "description": "Cap Météo vous donne instantanément les conditions en mer et les horaires de marées...",
           "examplePhrases": [
-            "Alexa, ouvre Météo Marine",
-            "Alexa, demande à Météo Marine la météo à Biarritz",
-            "Alexa, demande à Météo Marine les marées à La Rochelle"
+            "Alexa, ouvre Cap Météo",
+            "Alexa, demande à Cap Météo la météo à Biarritz",
+            "Alexa, demande à Cap Météo les marées à La Rochelle"
           ],
           "keywords": [
             "météo marine",
@@ -57,8 +57,8 @@
       "containsAds": false,
       "locales": {
         "fr-FR": {
-         "privacyPolicyUrl": "https://fsoudant.github.io/Marine/privacy.html",
-		 "termsOfUseUrl": "https://fsoudant.github.io/Marine/terms.html"
+          "privacyPolicyUrl": "https://fsoudant.github.io/Marine/privacy.html",
+          "termsOfUseUrl": "https://fsoudant.github.io/Marine/terms.html"
         }
       }
     }

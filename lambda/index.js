@@ -143,7 +143,7 @@ const LaunchRequestHandler = {
     
     if (deviceLoc && deviceLoc.permissionRequired) {
       return handlerInput.responseBuilder
-        .speak('Bienvenue dans Météo Marine ! Pour vous donner les informations de votre zone, j\'ai besoin d\'accéder à l\'adresse de votre appareil. Veuillez autoriser l\'accès dans l\'application Alexa.')
+        .speak('Bienvenue sur Cap Météo ! Pour vous donner les informations de votre zone, j\'ai besoin d\'accéder à l\'adresse de votre appareil. Veuillez autoriser l\'accès dans l\'application Alexa.')
         .withAskForPermissionsConsentCard(['read::alexa:device:all:address'])
         .getResponse();
     }
@@ -174,7 +174,7 @@ const LaunchRequestHandler = {
       }
     }
     
-    const welcomeSpeech = '<speak>Bienvenue dans Météo Marine ! Vous pouvez me demander la météo marine ou les marées pour un port, par exemple : <emphasis>météo à Biarritz</emphasis>, ou <emphasis>marées à La Rochelle</emphasis>.</speak>';
+    const welcomeSpeech = '<speak>Bienvenue sur Cap Météo ! Vous pouvez me demander la météo marine ou les marées pour un port, par exemple : <emphasis>météo à Biarritz</emphasis>, ou <emphasis>marées à La Rochelle</emphasis>.</speak>';
     
     return handlerInput.responseBuilder
       .speak(welcomeSpeech)
@@ -199,7 +199,7 @@ const MeteoMarineIntentHandler = {
       
       if (!location) {
         return handlerInput.responseBuilder
-          .speak('<speak>Je n\'ai pas trouvé ce lieu. Pouvez-vous préciser ? Par exemple : météo marine à Brest.</speak>')
+          .speak('<speak>Je n\'ai pas trouvé ce lieu. Pouvez-vous préciser ? Par exemple : cap météo à Brest.</speak>')
           .reprompt('<speak>Quel port souhaitez-vous ?</speak>')
           .getResponse();
       }
@@ -229,7 +229,7 @@ const MeteoMarineIntentHandler = {
         .getResponse();
         
     } catch (err) {
-      console.error('MeteoMarine error:', err);
+      console.error('CapMeteo error:', err);
       return handlerInput.responseBuilder
         .speak('<speak>Désolé, je n\'ai pas pu obtenir la météo marine. Vérifiez le nom du port et réessayez.</speak>')
         .getResponse();
@@ -506,7 +506,7 @@ const HelpIntentHandler = {
   },
   handle(handlerInput) {
     const speech = `<speak>
-      Météo Marine vous informe sur les conditions en mer et les horaires de marées.
+      Cap Météo vous informe sur les conditions en mer et les horaires de marées.
       <break time="200ms"/>
       Vous pouvez dire :
       <break time="100ms"/>
