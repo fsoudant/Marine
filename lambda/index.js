@@ -121,7 +121,7 @@ function buildTidesSpeech(tides, location) {
   if (tidesApresLaPrec.length > 0) {
     speech += `Marées suivantes : `;
     tidesApresLaPrec.forEach(t => {
-      speech += `${t.typeShort} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
+      speech += `${t.type} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
     });
   }
   
@@ -159,11 +159,11 @@ const LaunchRequestHandler = {
         const b = weather.beaufort;
         const next = tides.nextTide;
         
-        let speech = `<speak>Bienvenue dans Météo Marine pour ${deviceLoc.name}. `;
+        let speech = `<speak>Bienvenue sur Cap Météo pour ${deviceLoc.name}. `;
         speech += `Actuellement : vent de ${weather.windDirection} force ${b.force}, ${b.label}. `;
-        speech += `Mer ${weather.seaState.label.toLowerCase()}. `;
+        speech += `${weather.seaState.label.toLowerCase()}. `;
         if (next) speech += `Prochaine marée : ${next.type} à ${next.time}, ${formatDuration(next.minutesUntil)}. `;
-        speech += `<break time="300ms"/>Demandez la météo, les marées, ou un bulletin complet. </speak>`;
+        speech += `<break time="300ms"/>Demandez la météo, les marées, un bulletin complet , la navigation. </speak>`;
         
         return handlerInput.responseBuilder
           .speak(speech)
@@ -253,7 +253,7 @@ const MareeIntentHandler = {
       
       if (!location) {
         return handlerInput.responseBuilder
-          .speak('<speak>Quel port souhaitez-vous ? Par exemple : marées à Biarritz.</speak>')
+          .speak('<speak>Quel port souhaitez-vous ? Par exemple : marées à Royan.</speak>')
           .reprompt('<speak>Quel port ?</speak>')
           .getResponse();
       }
@@ -335,7 +335,7 @@ const MeteoEtMareeIntentHandler = {
       
       // Météo (abrégée)
       const b = weather.beaufort;
-      speech += `Météo marine : ${weather.description}. `;
+      speech += `Ciel : ${weather.description}. `;
       speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
       speech += `${b.label}. Mer ${weather.seaState.label.toLowerCase()}. `;
       if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
@@ -348,11 +348,11 @@ const MeteoEtMareeIntentHandler = {
       }
       const nextTides = tides.upcomingTides.slice(0, 4);
       if (nextTides.length > 0) {
-        speech += `Prochaine marée : ${nextTides[0].typeShort} à ${nextTides[0].time}, ${formatDuration(nextTides[0].minutesUntil)}, hauteur ${nextTides[0].height} mètres. `;
+        speech += `Prochaine marée : ${nextTides[0].type} à ${nextTides[0].time}, ${formatDuration(nextTides[0].minutesUntil)}, hauteur ${nextTides[0].height} mètres. `;
         if (nextTides.length > 1) {
           speech += `Puis : `;
           nextTides.slice(1).forEach(t => {
-            speech += `${t.typeShort} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
+            speech += `${t.type} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
           });
         }
       }
@@ -367,7 +367,7 @@ const MeteoEtMareeIntentHandler = {
           `Mer : ${weather.seaState.label}\nPression : ${weather.pressure} hPa\n\n` +
           `MARÉES\nPhase : ${tides.currentPhase}\n` +
           (tides.coefficient ? `Coefficient : ${tides.coefficient.value}\n` : '') +
-          nextTides.map(t => `${t.typeShort} ${t.time} → ${t.height}m`).join('\n')
+          nextTides.map(t => `${t.type} ${t.time} → ${t.height}m`).join('\n')
         )
         .getResponse();
         
@@ -418,7 +418,7 @@ const BulletinVoileIntentHandler = {
 
       let speech = `<speak>Bulletin voile pour ${locationLabel}. `;
       speech += `<break time="200ms"/>`;
-      speech += `${weather.description}. `;
+      speech += `Ciel : ${weather.description}. `;
       speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
       speech += `${b.label}. `;
       speech += `${weather.seaState.label}. `;
@@ -429,7 +429,7 @@ const BulletinVoileIntentHandler = {
         speech += `Coefficient ${tides.coefficient.value}, ${tides.coefficient.label}. `;
       }
       if (next) {
-        speech += `Prochaine marée : ${next.typeShort} à ${next.time}, `;
+        speech += `${next.type} à ${next.time}, `;
         speech += `${require('./services/tidesService').formatDuration(next.minutesUntil)}, `;
         speech += `hauteur ${next.height} mètres. `;
       }

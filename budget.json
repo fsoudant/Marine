@@ -1,0 +1,13 @@
+{
+  "BudgetName": "Alerte-5-dollars",
+  "BudgetLimit": {
+    "Amount": "5",
+    "Unit": "USD"
+  },
+  "BudgetType": "COST",
+  "TimeUnit": "MONTHLY",
+  "TimePeriod": {
+    "Start": "2026-06-01T00:00:00Z",
+    "End": "2087-06-15T00:00:00Z"
+  }
+}

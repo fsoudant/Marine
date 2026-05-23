@@ -4,9 +4,9 @@
     "default": {
       "deploymentStatus": "COMPLETE",
       "skillMetadata": {
-        "lastImportId": "amzn1.ask-package.import.97d11e1e-ca5d-4ae2-b508-4de415e64b07",
-        "lastImportTimestamp": "2026-05-18T17:59:02.015Z",
-        "lastDeployHash": "6BW9earoJtROUEWHzoz0QNFTMqI=",
+        "lastImportId": "amzn1.ask-package.import.d697e7f5-90d2-402d-bab6-9a9ea177c13a",
+        "lastImportTimestamp": "2026-05-23T15:56:50.293Z",
+        "lastDeployHash": "/prAEHSFUkPNebQQRBh/zeFxdJ8=",
         "lastDeployType": "interaction-model"
       },
       "skillId": "amzn1.ask.skill.736593e9-aa30-475e-a56b-22805da2486f"

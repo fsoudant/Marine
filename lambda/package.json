@@ -1,5 +1,5 @@
 {
-  "name": "alexa-meteo-marine",
+  "name": "alexa-cap-météo",
   "version": "3.0.0",
   "description": "Alexa Skill — Météo Marine et Marées — SHOM gratuit via vignette",
   "main": "index.js",
@@ -12,8 +12,8 @@
     "ask-sdk-model": "^1.86.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
-  "author": "Votre Nom",
+  "author": "François Soudant",
   "license": "MIT"
 }

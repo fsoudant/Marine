@@ -120,14 +120,19 @@
   		  }
   		],
  		 "samples": [
-   		 "bulletin voile à {location}",
-   		 "bulletin voile pour {location}",
-   		 "bulletin voile {location}",
-   		 "voile à {location}",
-   		 "navigation à {location}",
-   		 "sortie voile à {location}",
-   		 "je pars en voile à {location}",
-   		 "conditions voile à {location}"
+   		    "info voile à {location}",
+    "info voile pour {location}",
+    "info voile {location}",
+    "infos voile à {location}",
+    "infos voile pour {location}",
+    "bulletin voile à {location}",
+    "bulletin voile pour {location}",
+    "voile à {location}",
+    "navigation à {location}",
+    "sortie voile à {location}",
+    "conditions voile à {location}",
+    "météo skipper à {location}",
+    "bulletin skipper à {location}"
  		 ]
 		},
         {

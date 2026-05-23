@@ -389,6 +389,26 @@ function haversineKm(lat1, lon1, lat2, lon2) {
 
 // ─── Helpers durée ────────────────────────────────────────────────────────────
 
+function isDST(date) {
+  const year = date.getUTCFullYear();
+  
+  // Passage heure été : dernier dimanche de mars à 1h UTC
+  const lastSundayMarch = lastSunday(year, 2); // mois 2 = mars (0-indexé)
+  
+  // Passage heure hiver : dernier dimanche d'octobre à 1h UTC
+  const lastSundayOctober = lastSunday(year, 9); // mois 9 = octobre
+  
+  return date >= lastSundayMarch && date < lastSundayOctober;
+}
+
+function lastSunday(year, month) {
+  // Trouve le dernier dimanche du mois à 1h00 UTC
+  const lastDay = new Date(Date.UTC(year, month + 1, 0, 1, 0, 0));
+  const dayOfWeek = lastDay.getUTCDay();
+  lastDay.setUTCDate(lastDay.getUTCDate() - dayOfWeek);
+  return lastDay;
+}
+
 /**
  * Calcule le nombre de minutes entre maintenant et une marée exprimée en "HH:MM".
  * Gère correctement le passage minuit : si l'heure de la marée est inférieure
@@ -398,16 +418,20 @@ function haversineKm(lat1, lon1, lat2, lon2) {
  *   - 23h37, marée à 02h41 → 184 minutes  (lendemain)
  *   - 10h15, marée à 14h30 → 255 minutes  (même jour)
  */
+ 
 function minutesUntilTide(timeStr) {
   const [h, m] = timeStr.split(':').map(Number);
+  
   const now = new Date();
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const offset = isDST(now) ? 2 : 1;
+  const utcMinutes = now.getUTCHours() * 60 + now.getUTCMinutes();
+  const nowMinutes = (utcMinutes + offset * 60) % 1440;
+  
   const tideMinutes = h * 60 + m;
 
-  // Si l'heure de la marée est dans le passé aujourd'hui → elle est demain
   const diff = tideMinutes >= nowMinutes
     ? tideMinutes - nowMinutes
-    : 1440 - nowMinutes + tideMinutes; // 1440 = minutes dans une journée
+    : 1440 - nowMinutes + tideMinutes;
 
   return diff;
 }
