@@ -19,7 +19,9 @@
             "coefficient",
             "port",
             "navigation",
-            "plaisance"
+            "plaisance",
+            "bulletin voile",
+            "conditions voile"
           ]
         }
       },

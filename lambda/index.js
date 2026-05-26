@@ -53,7 +53,7 @@ function buildWeatherSpeech(weather, location) {
   speech += `<break time="300ms"/>`;
   
   // Conditions générales
-  speech += `Ciel : ${weather.description}. `;
+  speech += `${weather.description}. `;
   speech += `Température : ${weather.temperature} degrés. `;
   speech += `<break time="200ms"/>`;
   
@@ -67,7 +67,7 @@ function buildWeatherSpeech(weather, location) {
   speech += `<break time="200ms"/>`;
   
   // État de la mer
-  speech += `État de la mer : ${sea.label}, hauteur de vagues estimée ${sea.height}. `;
+  speech += `${sea.label}, hauteur de vagues estimée ${sea.height}. `;
   speech += `<break time="200ms"/>`;
   
   // Visibilité
@@ -76,15 +76,15 @@ function buildWeatherSpeech(weather, location) {
   }
   
   // Pression
-  speech += `Pression : ${weather.pressure} hectopascals. `;
+  speech += `Pression : ${weather.pressure} <say-as interpret-as="cardinal">hectopascals.</say-as>s. `;
   speech += `<break time="200ms"/>`;
   
   // Lever/coucher soleil
   if (weather.sunriseTime && weather.sunsetTime) {
     speech += `Lever du soleil à ${weather.sunriseTime}, coucher à ${weather.sunsetTime}. `;
   }
-  
   speech += `</speak>`;
+  
   return speech;
 }
 
@@ -332,15 +332,15 @@ const MeteoEtMareeIntentHandler = {
       // Combine les deux bulletins
       let speech = `<speak>Bulletin complet pour ${locationLabel}. `;
       speech += `<break time="300ms"/>`;
-      
       // Météo (abrégée)
       const b = weather.beaufort;
-      speech += `Ciel : ${weather.description}. `;
-      speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
-      speech += `${b.label}. Mer ${weather.seaState.label.toLowerCase()}. `;
-      if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
+      speech += `Ciel : ${weather.description}. `;  
+	  speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
+	  if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
+	  speech += `${b.label}. `;
+	//  speech += `<break time="200ms"/>`;
+	  speech += `${weather.seaState.label}. `;
       speech += `<break time="400ms"/>`;
-      
       // Marées
       speech += `Marées : la mer est ${tides.currentPhase}. `;
       if (tides.coefficient) {
@@ -356,7 +356,6 @@ const MeteoEtMareeIntentHandler = {
           });
         }
       }
-      
       speech += `</speak>`;
       
       return handlerInput.responseBuilder

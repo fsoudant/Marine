@@ -41,20 +41,13 @@
             }
           ],
           "samples": [
-            "météo marine",
-            "météo en mer",
-            "conditions en mer",
-            "météo à {location}",
-            "météo marine à {location}",
-            "conditions marines à {location}",
-            "quel temps fait-il en mer à {location}",
-            "la météo marine de {location}",
-            "bulletin météo marine pour {location}",
-            "état de la mer à {location}",
-            "conditions météo à {location}",
-            "donne moi la météo de {location}",
-            "donne moi la météo marine de {location}",
-            "quelle est la météo à {location}"
+         	 "la météo pour {location}",
+         	 "la météo de {location}",
+         	 "la météo à {location}",
+         	 "météo pour {location}",
+         	 "météo de {location}",
+         	 "météo à {location}",
+         	 "météo {location}"
           ]
         },
         {
@@ -66,30 +59,30 @@
    			 }
  			 ],
  			 "samples": [
+ 			  "les marées pour {location}",
+ 			  "les marées de {location}",
+ 			  "les marées à {location}",
+ 			  "marées pour {location}",
+ 			  "marées de {location}",
   			  "marées à {location}",
-  			  "les marées à {location}",
+  			  "marées {location}",
   			  "horaires des marées à {location}",
   			  "horaires de marées à {location}",
   			  "donne moi les marées à {location}",
   			  "donne moi les horaires de marées à {location}",
   			  "quand est la prochaine marée à {location}",
-  			  "coefficient de marée à {location}",
-  			  "à quelle heure est la marée à {location}",
   			  "pleine mer à {location}",
   			  "basse mer à {location}",
-   			 "les marées de {location}",
-   			 "horaires des marées pour {location}",
-   			 "marée à {location}",
-   			 "prochain coefficient à {location}",
-   			 "hauteur de marée à {location}",
-   			 "coefficient à {location}",
-   			 "la prochaine marée à {location}",
-			 "prochaine marée à {location}",
-			 "quelle est la prochaine marée à {location}",
-			 "quand est la prochaine marée à {location}",
-			 "prochaine pleine mer à {location}",
-			 "prochaine basse mer à {location}",
-			 "à quelle heure est la prochaine marée à {location}"
+   			  "horaires des marées pour {location}",
+   			  "prochain coefficient à {location}",
+   			  "hauteur de marée à {location}",
+   			  "coefficient à {location}",
+   			  "la prochaine marée à {location}",
+			  "prochaine marée à {location}",
+			  "quelle est la prochaine marée à {location}",
+			  "prochaine pleine mer à {location}",
+			  "prochaine basse mer à {location}",
+			  "à quelle heure est la prochaine marée à {location}"
  			 ]
 		},
         {
@@ -102,13 +95,20 @@
           ],
           "samples": [
             "tout sur {location}",
+            "la météo et marées pour {location}",
+            "la météo et marées de {location}",
+            "la météo et marées à {location}",
+            "météo et marées pour {location}",
+            "météo et marées de {location}",
             "météo et marées à {location}",
+            "météo et marées {location}",
+            "le bulletin complet pour {location}",
+            "le bulletin complet de {location}",
+            "le bulletin complet à {location}",
             "bulletin complet pour {location}",
-            "météo marine et marées à {location}",
-            "donne moi tout pour {location}",
+            "bulletin complet de {location}",
             "bulletin complet à {location}",
-            "conditions complètes à {location}",
-            "rapport complet pour {location}"
+            "bulletin complet {location}"            
           ]
         },
         {
@@ -120,34 +120,36 @@
   		  }
   		],
  		 "samples": [
-   		    "info voile à {location}",
-    "info voile pour {location}",
-    "info voile {location}",
-    "infos voile à {location}",
-    "infos voile pour {location}",
-    "bulletin voile à {location}",
-    "bulletin voile pour {location}",
-    "voile à {location}",
-    "navigation à {location}",
-    "sortie voile à {location}",
-    "conditions voile à {location}",
-    "météo skipper à {location}",
-    "bulletin skipper à {location}"
+ 		   "les conditions voile pour {location}",
+ 		   "les conditions voile de {location}",
+ 		   "les conditions voile à {location}",
+ 		   "conditions voile pour {location}",
+ 		   "conditions voile de {location}",
+ 		   "conditions voile à {location}",
+ 		   "conditions voile {location}",
+ 		   "les infos voile pour {location}",
+ 		   "les infos voile de {location}",
+		   "les infos voile à {location}",
+ 		   "infos voile pour {location}",
+ 		   "infos voile de {location}",
+		   "infos voile à {location}",
+		   "infos voile {location}"
  		 ]
 		},
         {
           "name": "MaPositionIntent",
           "slots": [],
           "samples": [
-            "ma position",
-            "ici",
-            "où je suis",
-            "météo ici",
-            "météo à ma position",
-            "marées ici",
             "utilise ma position",
             "détecte ma position",
-            "trouve ma position"
+            "trouve ma position",
+            "météo à ma position",
+            "marées à ma position",
+            "ma position",
+            "marées ici",
+            "météo ici",
+            "ici",
+            "où je suis"
           ]
         }
       ],
