@@ -294,6 +294,45 @@ const MareeIntentHandler = {
   }
 };
 
+// ─── Helpers speech partagés ─────────────────────────────────────────────────
+
+/**
+ * Bloc météo commun (sans balises <speak>)
+ */
+function buildMeteoBlock(weather) {
+  const b = weather.beaufort;
+  let s = '';
+  s += `Ciel : ${weather.description}. `;
+  s += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
+  if (weather.windGust) s += `Rafales à ${weather.windGust} nœuds. `;
+  s += `${b.label}. `;
+  s += `${weather.seaState.label}. `;
+  return s;
+}
+
+/**
+ * Bloc marées commun (sans balises <speak>)
+ * @param {boolean} nextOnly - true = prochaine marée uniquement (bulletin voile)
+ *                             false = toutes les marées (bulletin complet)
+ */
+function buildTidesBlock(tides, nextOnly = false) {
+  let s = '';
+  s += `Marées : la mer est ${tides.currentPhase}. `;
+  if (tides.coefficient) {
+    s += `Coefficient ${tides.coefficient.value}, ${tides.coefficient.label}. `;
+  }
+  const nextTides = tides.upcomingTides.slice(0, nextOnly ? 1 : 4);
+  if (nextTides.length > 0) {
+    s += `Prochaine marée : ${nextTides[0].type} à ${nextTides[0].time}, ${formatDuration(nextTides[0].minutesUntil)}, hauteur ${nextTides[0].height} mètres. `;
+    if (!nextOnly && nextTides.length > 1) {
+      s += `Puis : `;
+      nextTides.slice(1).forEach(t => {
+        s += `${t.type} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
+      });
+    }
+  }
+  return s;
+}
 /**
  * MeteoEtMareeIntent — Bulletin complet météo + marées
  */
@@ -304,72 +343,38 @@ const MeteoEtMareeIntentHandler = {
   },
   async handle(handlerInput) {
     const locationSlot = Alexa.getSlot(handlerInput.requestEnvelope, 'location');
-    
     try {
       const location = await resolveLocation(handlerInput, locationSlot);
-      
-      if (!location) {
-        return handlerInput.responseBuilder
-          .speak('<speak>Pour quel port souhaitez-vous un bulletin complet ?</speak>')
-          .reprompt('<speak>Quel port ?</speak>')
-          .getResponse();
-      }
-      
-      if (location.permissionRequired) {
-        return handlerInput.responseBuilder
-          .speak('<speak>Autorisez l\'accès à votre adresse dans l\'app Alexa ou précisez un lieu.</speak>')
-          .withAskForPermissionsConsentCard(['read::alexa:device:all:address'])
-          .getResponse();
-      }
-      
+      if (!location) return handlerInput.responseBuilder
+        .speak('<speak>Pour quel port souhaitez-vous un bulletin complet ?</speak>')
+        .reprompt('<speak>Quel port ?</speak>').getResponse();
+      if (location.permissionRequired) return handlerInput.responseBuilder
+        .speak('<speak>Autorisez l\'accès à votre adresse dans l\'app Alexa ou précisez un lieu.</speak>')
+        .withAskForPermissionsConsentCard(['read::alexa:device:all:address']).getResponse();
+
       const [weather, tides] = await Promise.all([
         getMarineWeather(location.lat, location.lon),
         getTides(location.lat, location.lon, location.name)
       ]);
-      
       const locationLabel = location.source === 'box' ? `votre position (${location.name})` : location.name;
-      
-      // Combine les deux bulletins
-      let speech = `<speak>Bulletin complet pour ${locationLabel}. `;
-      speech += `<break time="300ms"/>`;
-      // Météo (abrégée)
-      const b = weather.beaufort;
-      speech += `Ciel : ${weather.description}. `;  
-	  speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
-	  if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
-	  speech += `${b.label}. `;
-	//  speech += `<break time="200ms"/>`;
-	  speech += `${weather.seaState.label}. `;
+
+      let speech = `<speak>Bulletin complet pour ${locationLabel}. <break time="300ms"/>`;
+      speech += buildMeteoBlock(weather);
       speech += `<break time="400ms"/>`;
-      // Marées
-      speech += `Marées : la mer est ${tides.currentPhase}. `;
-      if (tides.coefficient) {
-        speech += `Coefficient ${tides.coefficient.value}, ${tides.coefficient.label}. `;
-      }
-      const nextTides = tides.upcomingTides.slice(0, 4);
-      if (nextTides.length > 0) {
-        speech += `Prochaine marée : ${nextTides[0].type} à ${nextTides[0].time}, ${formatDuration(nextTides[0].minutesUntil)}, hauteur ${nextTides[0].height} mètres. `;
-        if (nextTides.length > 1) {
-          speech += `Puis : `;
-          nextTides.slice(1).forEach(t => {
-            speech += `${t.type} à ${t.time} (${formatDuration(t.minutesUntil)}), ${t.height} mètres. `;
-          });
-        }
-      }
+      speech += buildTidesBlock(tides, false);
       speech += `</speak>`;
-      
+
       return handlerInput.responseBuilder
         .speak(speech)
         .withSimpleCard(
           `⚓🌊 Bulletin Complet — ${location.name}`,
-          `MÉTÉO MARINE\nVent : ${weather.windDirection} ${weather.windSpeed} nœuds (F${weather.beaufort.force})\n` +
+          `MÉTÉO\nVent : ${weather.windDirection} ${weather.windSpeed} nœuds (F${weather.beaufort.force})\n` +
           `Mer : ${weather.seaState.label}\nPression : ${weather.pressure} hPa\n\n` +
           `MARÉES\nPhase : ${tides.currentPhase}\n` +
           (tides.coefficient ? `Coefficient : ${tides.coefficient.value}\n` : '') +
-          nextTides.map(t => `${t.type} ${t.time} → ${t.height}m`).join('\n')
-        )
-        .getResponse();
-        
+          tides.upcomingTides.slice(0, 4).map(t => `${t.type} ${t.time} → ${t.height}m`).join('\n')
+        ).getResponse();
+
     } catch (err) {
       console.error('MeteoEtMaree error:', err);
       return handlerInput.responseBuilder
@@ -380,9 +385,8 @@ const MeteoEtMareeIntentHandler = {
 };
 
 /**
- * BulletinVoileInten — Bulletin complet météo +prochaine marée
+ * BulletinVoileIntent — Bulletin météo + prochaine marée uniquement
  */
-
 const BulletinVoileIntentHandler = {
   canHandle(handlerInput) {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
@@ -392,50 +396,37 @@ const BulletinVoileIntentHandler = {
     const locationSlot = Alexa.getSlot(handlerInput.requestEnvelope, 'location');
     try {
       const location = await resolveLocation(handlerInput, locationSlot);
-      if (!location) {
-        return handlerInput.responseBuilder
-          .speak('<speak>Pour quel port souhaitez-vous le bulletin voile ?</speak>')
-          .reprompt('<speak>Quel port ?</speak>')
-          .getResponse();
-      }
-      if (location.permissionRequired) {
-        return handlerInput.responseBuilder
-          .speak('<speak>Autorisez l\'accès à votre adresse dans l\'app Alexa ou précisez un lieu.</speak>')
-          .withAskForPermissionsConsentCard(['read::alexa:device:all:address'])
-          .getResponse();
-      }
+      if (!location) return handlerInput.responseBuilder
+        .speak('<speak>Pour quel port souhaitez-vous le bulletin voile ?</speak>')
+        .reprompt('<speak>Quel port ?</speak>').getResponse();
+      if (location.permissionRequired) return handlerInput.responseBuilder
+        .speak('<speak>Autorisez l\'accès à votre adresse dans l\'app Alexa ou précisez un lieu.</speak>')
+        .withAskForPermissionsConsentCard(['read::alexa:device:all:address']).getResponse();
 
       const [weather, tides] = await Promise.all([
         getMarineWeather(location.lat, location.lon),
         getTides(location.lat, location.lon, location.name)
       ]);
+      const locationLabel = location.source === 'box' ? `votre position (${location.name})` : location.name;
 
-      const locationLabel = location.source === 'box'
-        ? `votre position (${location.name})` : location.name;
-      const b = weather.beaufort;
-      const next = tides.nextTide;
-
-      let speech = `<speak>Bulletin voile pour ${locationLabel}. `;
-      speech += `<break time="200ms"/>`;
-      speech += `Ciel : ${weather.description}. `;
-      speech += `Vent de ${weather.windDirection}, force ${b.force}, ${weather.windSpeed} nœuds. `;
-      speech += `${b.label}. `;
-      speech += `${weather.seaState.label}. `;
-      if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
+      let speech = `<speak>Bulletin voile pour ${locationLabel}. <break time="200ms"/>`;
+      speech += buildMeteoBlock(weather);
       speech += `<break time="300ms"/>`;
-      speech += `Marées : la mer est ${tides.currentPhase}. `;
-      if (tides.coefficient) {
-        speech += `Coefficient ${tides.coefficient.value}, ${tides.coefficient.label}. `;
-      }
-      if (next) {
-        speech += `${next.type} à ${next.time}, `;
-        speech += `${require('./services/tidesService').formatDuration(next.minutesUntil)}, `;
-        speech += `hauteur ${next.height} mètres. `;
-      }
+      speech += buildTidesBlock(tides, true);
       speech += `</speak>`;
-
-      return handlerInput.responseBuilder.speak(speech).getResponse();
-
+      
+      return handlerInput.responseBuilder
+  		.speak(speech)
+  		.withSimpleCard(
+    		`⛵ Bulletin Voile — ${location.name}`,
+    		`MÉTÉO\nVent : ${weather.windDirection} ${weather.windSpeed} nœuds (F${weather.beaufort.force})\n` +
+   			 `Rafales : ${weather.windGust ? weather.windGust + ' nœuds' : 'aucune'}\n` +
+    		`Mer : ${weather.seaState.label}\n\n` +
+    		`MARÉES\nPhase : ${tides.currentPhase}\n` +
+    		(tides.coefficient ? `Coefficient : ${tides.coefficient.value} (${tides.coefficient.label})\n` : '') +
+    		(tides.nextTide ? `${tides.nextTide.type} ${tides.nextTide.time} → ${tides.nextTide.height}m` : '')
+  		).getResponse();
+      
     } catch (err) {
       console.error('BulletinVoile error:', err);
       return handlerInput.responseBuilder
