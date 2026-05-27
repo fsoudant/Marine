@@ -133,7 +133,8 @@
  		   "infos voile pour {location}",
  		   "infos voile de {location}",
 		   "infos voile à {location}",
-		   "infos voile {location}"
+		   "infos voile {location}",
+		   "navigation {location}"
  		 ]
 		},
         {

@@ -59,11 +59,8 @@ function buildWeatherSpeech(weather, location) {
   
   // Vent
   speech += `Vent de ${weather.windDirection}, force ${b.force} Beaufort, soit ${weather.windSpeed} nœuds. `;
+  if (weather.windGust) speech += `Rafales à ${weather.windGust} nœuds. `;
   speech += `${b.label}. `;
-  
-  if (weather.windGust) {
-    speech += `Rafales jusqu'à ${weather.windGust} nœuds. `;
-  }
   speech += `<break time="200ms"/>`;
   
   // État de la mer
@@ -76,7 +73,7 @@ function buildWeatherSpeech(weather, location) {
   }
   
   // Pression
-  speech += `Pression : ${weather.pressure} <say-as interpret-as="cardinal">hectopascals.</say-as>s. `;
+  speech += `Pression : ${weather.pressure} <say-as interpret-as="cardinal">hectopascals. </say-as>`;
   speech += `<break time="200ms"/>`;
   
   // Lever/coucher soleil
@@ -163,7 +160,7 @@ const LaunchRequestHandler = {
         speech += `Actuellement : vent de ${weather.windDirection} force ${b.force}, ${b.label}. `;
         speech += `${weather.seaState.label.toLowerCase()}. `;
         if (next) speech += `Prochaine marée : ${next.type} à ${next.time}, ${formatDuration(next.minutesUntil)}. `;
-        speech += `<break time="300ms"/>Demandez la météo, les marées, un bulletin complet , la navigation. </speak>`;
+        speech += `<break time="300ms"/>Demandez la météo, les marées, un bulletin complet , les conditions de voile. </speak>`;
         
         return handlerInput.responseBuilder
           .speak(speech)
